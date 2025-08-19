@@ -1,8 +1,8 @@
 # Metstat
 A fully autonomous, unattended, solar-powered, IoT weather probe with mesh networking capabilities.
 
-<br><img height="450" alt="image" src="https://github.com/user-attachments/assets/f0d9faf0-f985-42cd-832b-3d01d26774f1" />
-<img height="450" alt="image" src="https://github.com/user-attachments/assets/4f75dd7c-1d28-487e-886c-dd3f7bac162d" />
+<br><img height="350" alt="image" src="https://github.com/user-attachments/assets/f0d9faf0-f985-42cd-832b-3d01d26774f1" />
+<img height="350" alt="image" src="https://github.com/user-attachments/assets/4f75dd7c-1d28-487e-886c-dd3f7bac162d" />
 
 
 ## Hardware stack
