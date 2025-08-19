@@ -1,0 +1,16 @@
+Plugin v0.0.1 running on KiCad 9.0.3 and Python 3.11.5 (main, Jun 15 2025, 06:45:45) [MSC v.1942 64 bit (AMD64)] on win32.
+Config file C:\Users\Giorgio\OneDrive\Projects\metstat\pcb\main\main.projinst.json not found. Creating new one.
+Valid Board found for C:\Users\Giorgio\OneDrive\Projects\metstat\pcb\main\main.kicad_sch
+3 sheet instances entries in C:\Users\Giorgio\OneDrive\Projects\metstat\pcb\main\main.kicad_sch
+C:\Users\Giorgio\OneDrive\Projects\metstat\pcb\main\interboard.kicad_pcb doesn't exist
+0 sheet instances entries in C:\Users\Giorgio\OneDrive\Projects\metstat\pcb\main\interboard.kicad_sch
+C:\Users\Giorgio\OneDrive\Projects\metstat\pcb\main\mcu.kicad_pcb doesn't exist
+0 sheet instances entries in C:\Users\Giorgio\OneDrive\Projects\metstat\pcb\main\mcu.kicad_sch
+C:\Users\Giorgio\OneDrive\Projects\metstat\pcb\main\power_supply.kicad_pcb doesn't exist
+0 sheet instances entries in C:\Users\Giorgio\OneDrive\Projects\metstat\pcb\main\power_supply.kicad_sch
+Root item: <wx._dataview.TreeListItem object at 0x000001DB2EC0A560>
+No Valid Child board for 4e0ed84c-32b7-4c55-89e1-122a27505522
+No Valid Child board for b4273d95-4845-47b9-9a72-d49f177eb516
+No Valid Child board for c91739ad-b78a-4215-a1d9-106e501a90e6
+No Valid Child board for 
+Instance is a dead branch: 

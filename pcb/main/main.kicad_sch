@@ -1,0 +1,143 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "d418d002-6e7b-43a4-bf08-9ab9c03421f0")
+	(paper "A4")
+	(title_block
+		(title "Project METSTAT Main Board")
+		(date "2025-08-03")
+		(rev "1.0")
+		(company "MRtecno98")
+	)
+	(lib_symbols)
+	(sheet
+		(at 69.85 137.16)
+		(size 27.94 5.08)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "4e0ed84c-32b7-4c55-89e1-122a27505522")
+		(property "Sheetname" "Interboard"
+			(at 70.358 140.462 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "interboard.kicad_sch"
+			(at 69.85 142.8246 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "main"
+				(path "/d418d002-6e7b-43a4-bf08-9ab9c03421f0"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 69.85 118.11)
+		(size 27.94 5.08)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "b4273d95-4845-47b9-9a72-d49f177eb516")
+		(property "Sheetname" "MCU"
+			(at 70.866 121.412 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "mcu.kicad_sch"
+			(at 69.85 123.7746 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "main"
+				(path "/d418d002-6e7b-43a4-bf08-9ab9c03421f0"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 69.85 127)
+		(size 27.94 5.08)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "c91739ad-b78a-4215-a1d9-106e501a90e6")
+		(property "Sheetname" "Power Supply"
+			(at 70.866 130.302 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "power_supply.kicad_sch"
+			(at 69.85 132.6646 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "main"
+				(path "/d418d002-6e7b-43a4-bf08-9ab9c03421f0"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)
