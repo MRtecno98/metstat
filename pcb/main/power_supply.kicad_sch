@@ -36695,7 +36695,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_Molex:Molex_KK-396_A-41791-0002_1x02_P3.96mm_Vertical"
+		(property "Footprint" "Connector_Molex:Molex_PicoBlade_53261-0271_1x02-1MP_P1.25mm_Horizontal"
 			(at 45.72 100.33 0)
 			(effects
 				(font
@@ -37847,7 +37847,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_Molex:Molex_KK-396_A-41791-0002_1x02_P3.96mm_Vertical"
+		(property "Footprint" "Connector_Molex:Molex_PicoBlade_53261-0271_1x02-1MP_P1.25mm_Horizontal"
 			(at 45.72 66.04 0)
 			(effects
 				(font
@@ -37980,7 +37980,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_Molex:Molex_KK-396_A-41791-0002_1x02_P3.96mm_Vertical"
+		(property "Footprint" "Connector_Molex:Molex_PicoBlade_53261-0271_1x02-1MP_P1.25mm_Horizontal"
 			(at 45.72 77.47 0)
 			(effects
 				(font
@@ -38382,7 +38382,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_Molex:Molex_KK-396_A-41791-0002_1x02_P3.96mm_Vertical"
+		(property "Footprint" "Connector_Molex:Molex_PicoBlade_53261-0271_1x02-1MP_P1.25mm_Horizontal"
 			(at 45.72 88.9 0)
 			(effects
 				(font

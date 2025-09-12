@@ -254,12 +254,7 @@
     "equivalence_files": []
   },
   "erc": {
-    "erc_exclusions": [
-      [
-        "power_pin_not_driven|1422400|736600|3c9f13f5-ef39-4c86-a953-180feb54dfbd|00000000-0000-0000-0000-000000000000|/d418d002-6e7b-43a4-bf08-9ab9c03421f0/c91739ad-b78a-4215-a1d9-106e501a90e6|/d418d002-6e7b-43a4-bf08-9ab9c03421f0/c91739ad-b78a-4215-a1d9-106e501a90e6|",
-        ""
-      ]
-    ],
+    "erc_exclusions": [],
     "meta": {
       "version": 0
     },
@@ -473,6 +468,7 @@
       "single_global_label": "ignore",
       "unannotated": "error",
       "unconnected_wire_endpoint": "warning",
+      "undefined_netclass": "error",
       "unit_value_mismatch": "error",
       "unresolved_variable": "error",
       "wire_dangling": "error"
@@ -538,7 +534,7 @@
       "plot": "",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "",
+      "step": "main.step",
       "svg": "",
       "vrml": ""
     },
