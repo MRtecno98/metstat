@@ -1,5 +1,6 @@
 **/*.sld* filter=lfs diff=lfs merge=lfs -text lockable
 **/*.stl filter=lfs diff=lfs merge=lfs -text lockable
 **/*.3mf filter=lfs diff=lfs merge=lfs -text lockable
+**/*.step filter=lfs diff=lfs merge=lfs -text lockable
 **/*.gcode text=auto eol=lf
 **/*.kicad* text=auto eol=lf
