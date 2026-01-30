@@ -1,2 +1,4 @@
 ~$*
 gcode/
+.venv/
+**/__pycache__/

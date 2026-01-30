@@ -1,0 +1,12 @@
+[project]
+name = "metstat"
+version = "0.1.0"
+description = "Autonomous, unattended, solar-powered, meshed network IoT weather probe"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "matplotlib>=3.10.8",
+    "numpy>=2.4.1",
+    "pandas>=2.3.3",
+    "scipy>=1.17.0",
+]
