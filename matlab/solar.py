@@ -1,5 +1,5 @@
 from numpy import dot, array, radians, sin, cos, pi, linspace, arange
-from matplotlib.pyplot import subplots, show, subplots_adjust
+from matplotlib.pyplot import subplots, show
 from random import random
 
 VCC = 3.3
@@ -17,7 +17,7 @@ daytime = 12 * 3600 # hours in seconds
 # phi: azimuth difference between face and sun, between [0, 2pi]
 # gamma: tilt angle of the cube, between [0, pi/2]
 
-time_steps = 100
+time_steps = 1000
 
 # x, y, z: coordinate system
 # xc, yc, zc: cube's coordinate system, rotated by gamma around z-axis
@@ -57,53 +57,52 @@ def faces(gamma):
 	yc = array([sin(gamma), cos(gamma), 0])
 	zc = z
 
-	return [xc, yc, -xc, -yc, zc, -zc]
+	return [xc, yc, zc, -xc, -yc, -zc]
 
 def rcolor():
 	return (random(), random(), random())
 
 time = linspace(0, daytime, time_steps)
-
 time_h = time / 3600
 
-fig, ax = subplots(2,1, sharex=True)
+phi_range = arange(0, 361, 72)
+gamma_range = arange(0, 91, 18)
+theta_range = theta(time)
 
-pwr1, pwr2 = ax[0], ax[1]
+gamma_colors = {gamma : rcolor() for gamma in gamma_range}
 
-pwr1.set_ylabel('Power (W)')
-pwr1.set_xlabel('Time (hours)')
+fig, ax = subplots(len(phi_range) // 2, 2, sharex=True, layout='constrained', num='Solar power')
 
-pwr1.set_title('Solar power for phi=0° parametrized to tilt angle gamma')
-
-phi = radians(0)
-for gamma_deg in arange(0, 90, 15):
-	gamma = radians(gamma_deg)
-
-	power = [P_total(theta(t), gamma, phi) for t in time]
+for i, phi_deg in enumerate(phi_range):
+	row = i % (len(phi_range) // 2)
+	column = i // (len(phi_range) // 2)
+	if i > (len(phi_range) // 2) - 1:
+		row = (len(phi_range) // 2) - row - 1
 		
-	pwr1.plot(time_h, power, label='gamma={}°'.format(gamma_deg), color=rcolor())
+	axis = ax[row, column]
 
-pwr2.set_ylabel('Power (W)')
-pwr2.set_xlabel('Time (hours)')
+	axis.set_ylabel('Power (W)')
+	axis.set_xlabel('Time (hours)')
+	axis.grid(True, linestyle='-', alpha=0.5)
 
-pwr2.set_title('Solar power for gamma=30° parametrized to azimuth phi')
+	axis.set_title(f'Solar power for phi={phi_deg}°')
 
-gamma = radians(30)
-for phi_deg in arange(0, 180, 45):
 	phi = radians(phi_deg)
+	for gamma_deg in gamma_range:
+		gamma = radians(gamma_deg)
 
-	power = [P_total(theta(t), gamma, phi) for t in time]
-		
-	pwr2.plot(time_h, power, label='phi={}°'.format(phi_deg), color=rcolor())
+		power = [P_total(theta, gamma, phi) for theta in theta_range]
+			
+		axis.plot(time_h, power, label=f'gamma={gamma_deg}°' if i == 0 else None, color=gamma_colors[gamma_deg])
 
-fig.tight_layout()
-fig.legend(loc='upper right', fancybox=True, shadow=True)
+fig.legend(loc='outside center right')
 
-fig, gm = subplots(1,1, sharex=True)
+fig, gm = subplots(1,1, sharex=True, num='Gamma comparison', layout='constrained')
 
 gm.set_ylabel('Power (W)')
 gm.set_xlabel('Tilt angle gamma (degrees)')
 gm.set_title('Solar power for phi=0° parametrized to time of day')
+gm.grid(True, linestyle='-', alpha=0.5)
 
 phi = radians(0)
 gm_space = linspace(0, pi/2, 100)
@@ -115,8 +114,7 @@ for t_h in arange(0, 12, 2):
 
 	gm.plot(gm_space * 180 / pi, power, label='time={}:00'.format(t_h), color=rcolor())
 	
+fig.legend(loc='upper right')
 
-fig.legend(loc='upper right', fancybox=True, shadow=True)
-fig.tight_layout()
-
-show()
+if __name__ == '__main__':
+	show()
